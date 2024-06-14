@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="container bg-slate-500 mx-auto w-1/2 rounded-md min-h-[80vh] my-5">
       <Header />
-      <div className="mx-2 rounded-md my-5">
+      <div className="mx-5 rounded-md my-5">
         <AddTodos />
-        <div className="showTodos flex gap-3">
+        <div className="showTodos flex gap-3 justify-between">
           <ShowTodos />
           <div className="buttons flex justify-center items-end gap-3">
             <EditTodoButton />
