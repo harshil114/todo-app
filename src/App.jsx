@@ -9,7 +9,6 @@ function App() {
       <Header />
       <div className="mx-5 rounded-md my-5">
         <AddTodos />
-        <ShowTodos />
       </div>
     </div>
   );
