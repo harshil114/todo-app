@@ -2,8 +2,6 @@ import React from "react";
 import Header from "./components/Header";
 import AddTodos from "./components/AddTodos";
 import ShowTodos from "./components/ShowTodos";
-import EditTodoButton from "./components/EditTodoButton";
-import DeleteTodoButton from "./DeleteTodoButton";
 
 function App() {
   return (
@@ -11,13 +9,7 @@ function App() {
       <Header />
       <div className="mx-5 rounded-md my-5">
         <AddTodos />
-        <div className="showTodos flex gap-3 justify-between">
-          <ShowTodos />
-          <div className="buttons flex justify-center items-end gap-3">
-            <EditTodoButton />
-            <DeleteTodoButton />
-          </div>
-        </div>
+        <ShowTodos />
       </div>
     </div>
   );
