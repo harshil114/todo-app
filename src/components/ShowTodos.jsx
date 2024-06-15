@@ -8,20 +8,19 @@ function ShowTodos() {
     <div className="showTodo-container">
       <h2 className="showTodo-heading font-bold mb-4 text-xl">Your Todos</h2>
       <div className="todos">
-        <div className="todo flex justify-between">
+        <div className="todo">
           <div className="text font-medium">
-            <ul className="">
+            <ul className="text-list">
               {value.map((item) => (
-                <li className="flex">
+                <li className="flex justify-between mt-3">
                   {item}
-                  <div className="buttons flex">
+                  <div className="buttons flex gap-4">
                     <EditTodoButton /> <DeleteTodoButton />
                   </div>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="button flex gap-3"></div>
         </div>
       </div>
     </div>
